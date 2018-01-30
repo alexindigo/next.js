@@ -1,11 +1,7 @@
-import { Link, Router } from '../routes'
+import Second from './second'
 
 export default () => (
-  <ul>
-    <li><Link route='blog' params={{ slug: 'hello-world' }}><a>Blog: Hello world</a></Link></li>
-    <li><Link route='blog' params={{ slug: 'another-blog-post' }}><a>Blog: Another blog post</a></Link></li>
-    <li><Link route='blog' params={{ slug: 'non-existant' }}><a>Blog: Not found</a></Link></li>
-    <li><button onClick={() => Router.pushRoute('about', { foo: 'bar' })}>About foo bar</button></li>
-    <li><button onClick={() => Router.pushRoute('about', { foo: 'baz' })}>About foo baz</button></li>
-  </ul>
+  <div style={{outline: '1px dotted #ff0000'}}>
+    <Second />
+  </div>
 )
